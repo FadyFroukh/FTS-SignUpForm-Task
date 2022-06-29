@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Fady Froukh">
+    <meta name="description" content="SignUp Task for FTS Training Program">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SignUp Form Task</title>
+</head>
+<body>
+    <main class="item-center">
+        <header>
+            <h1>FTS Training Sign Up Form</h1>
+        </header>
+        <form action="https://formspree.io/f/xknyaewg" method="POST" enctype="application/x-www-form-urlencoded">
+            <section class="formSection">
+                <div class="formDiv">
+                    <label for="firstName">FullName</label>
+                    <input name="firstName" type="text" required placeholder="Enter Your First Name"/>
+                </div>
+                <div class="formDiv">
+                    <label for="email">Email Address</label>
+                    <input name="email" type="email" required placeholder="Enter Your Email Address">
+                </div>
+            </section>
+            <section class="formSection">
+                <div class="formDiv">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" required placeholder="Enter Your Password" minlength="8">
+                </div>
+                <div class="formDiv">
+                    <label for="phone">Phone Number</label>
+                    <input name="phone" type="tel" required placeholder="Enter Your Phone Number">
+                </div>
+            </section>
+            <section class="formSection">
+                <div class="formDiv">
+                    <label for="dateOfBirth">Date of Birth (Optional)</label>
+                    <input type="date" name="dateOfBirth" placeholder="Choose Date">
+                </div>
+                <div class="formDiv">
+                    <label for="region">Region</label>
+                    <select name="region" required>
+                        <option value="algeria">Algeria <span>🇩🇿</span></option>
+                        <option value="bahrin">Bahrin <span>🇧🇭</span></option>
+                        <option value="egypt">Egypt <span>🇪🇬</span></option>
+                        <option value="iran">Iran <span>🇮🇷</span></option>
+                        <option value="iraq">Iraq <span>🇮🇶</span></option>
+                        <option value="palestine">Palestine <span>🇵🇸</span></option>
+                        <option value="jordan">Jordan <span>🇯🇴</span></option>
+                        <option value="kuwait">Kuwait <span>🇰🇼</span></option>
+                        <option value="lebanon">Lebanon <span>🇱🇧</span></option>
+                        <option value="libya">Libya <span>🇱🇾</span></option>
+                        <option value="morocco">Morocco <span>🇲🇦</span></option>
+                        <option value="oman">Oman <span>🇴🇲</span></option>
+                        <option value="qatar">Qatar <span>🇶🇦</span></option>
+                        <option value="saudiarabia">SaudiArabia <span>🇸🇦</span></option>
+                        <option value="syria">Syria <span>🇸🇾</span></option>
+                        <option value="tunisia">Tunisia <span>🇹🇳</span></option>
+                        <option value="yemen">Yemen <span>🇾🇪</span></option>
+                        <option value="uae">United Arab Emirates <span>🇦🇪</span></option>
+                    </select>
+                </div>
+            </section>
+            <section class="formSection">
+                <div class="formDiv flex-row">
+                    <label for="plan">Choose Plan</label>
+                    <div class="plan">
+                        <span>Free</span>
+                        <input type="radio" name="plan" value="free" required/>
+                    </div>
+                    <div class="plan">
+                        <span>Pro</span>
+                        <input type="radio" name="plan" value="pro" required/>
+                    </div>
+                </div>
+            </section>
+            <section class="formSection">
+                <div class="formDiv flex-row">
+                    <label for="agree">By Signing Up I Agree to the <a href="#">Terms and Conditions</a></label>
+                    <input type="checkbox" name="agree" value="agree" required>
+                </div>
+            </section>
+            <section class="formSection">
+                <div class="formDiv item-center">
+                    <button type="submit">Send Data</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
